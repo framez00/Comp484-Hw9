@@ -10,6 +10,23 @@
 // 5. Create a string in the format: "Today is MM/DD/YYYY"
 // 6. Display the result in the element with id="dateOutput"
 
+var date = new Date();
+var month = date.getMonth() + 1; //+1 because months start at 0
+var day = date.getDate();
+var year = date.getFullYear();
+
+//add leading zeros to month and day
+if(month < 10){
+    month = "0" + month;
+}
+
+if(day < 10){
+    day = "0" + day;
+}
+
+document.getElementById("dateOutput").textContent = 
+    "Today is " + month + "/" + day + "/" + year;
+
 // ==========================
 // Part 2: Number Conversion
 // ==========================
