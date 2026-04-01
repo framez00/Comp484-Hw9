@@ -1,19 +1,20 @@
 1. A list of the built-in objects and methods you used
-Date Object:
-- getMonth()
-- getDate()
-- getFullYear()
 
-Number Object:
-- Number()
-- Number.isNaN()
-- Number.isInteger()
-- toFixed
+- Date Object:
+    - getMonth()
+    - getDate()
+    - getFullYear()
 
-Document Object
-- getElementById()
-- innerHTML
-- textContent
+- Number Object:
+    - Number()
+    - Number.isNaN()
+    - Number.isInteger()
+    - toFixed
+
+- Document Object
+    - getElementById()
+    - innerHTML
+    - textContent
 
 2. Your **GitHub Pages link**
 3. Path to a screenshot file of the finished webpage

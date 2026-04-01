@@ -1,0 +1,19 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.section{
+    background: #e0e0e0;
+    padding: 1px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h2{
+    margin-top: 5px;
+}
+
+div{
+    margin-bottom: 10px;
+}
