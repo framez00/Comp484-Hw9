@@ -62,16 +62,19 @@ document.getElementById("dateOutput").textContent =
 // 5. Display the final result inside the element:
 //    id="numberConversionOutput"
 
+//create the values
 var value1 = "50";
 var value2 = "25.25";
 var value3 = "bye";
 var value4 = "100";
 
+//convert
 var number1 = Number(value1);
 var number2 = Number(value2);
 var number3 = Number(value3);
 var number4 = Number(value4);
 
+//checks
 var check1NaN = Number.isNaN(number1);
 var check1Int = Number.isInteger(number1);
 var check2NaN = Number.isNaN(number2);
@@ -81,6 +84,7 @@ var check3Int = Number.isInteger(number3);
 var check4NaN = Number.isNaN(number4);
 var check4Int = Number.isInteger(number4);
 
+//individual output sentences
 var sentence1 = "Original value: '" + value1 + "' -> Converted: " + number1 + " -> isNaN: " + check1NaN + " -> isInteger: " + check1Int;
 var sentence2 = "Original value: '" + value2 + "' -> Converted: " + number2 + " -> isNaN: " + check2NaN + " -> isInteger: " + check2Int;
 var sentence3 = "Original value: '" + value3 + "' -> Converted: " + number3 + " -> isNaN: " + check3NaN + " -> isInteger: " + check3Int;
@@ -101,6 +105,7 @@ if(check4Int == true){
     messageInt = "This value is not an integer."
 }
 
+//final output
 var output = sentence1 + "<br>" + sentence2 + "<br>" + sentence3 + ". " + messageNaN + "<br>" + sentence4 + ". " + messageInt;
 
 document.getElementById("numberConversionOutput").innerHTML = output;

@@ -17,6 +17,7 @@
     - textContent
 
 2. Your **GitHub Pages link**
+- https://framez00.github.io/Comp484-Hw9/
 3. Path to a screenshot file of the finished webpage
 - screenshot.png
 4. A short reflection of **4-5 sentences** that answers:
