@@ -111,6 +111,23 @@ document.getElementById("numberConversionOutput").innerHTML = output;
 //
 // 5. Display the results inside the element with id="mathOutput"
 
+var itemPrice = 20;
+var taxRate = 0.08;
+var shippingCost = 3;
+
+var subtotal = itemPrice + shippingCost; //addition
+var taxAmount = subtotal * taxRate; //multiplication
+var totalCost = subtotal + taxAmount; //addition
+
+var totalFixed = totalCost.toFixed(2); //toFixed(2)
+
+//build string that shows results
+var result;
+result = "Price: $" + itemPrice + "<br>" + "Taxrate: " + taxRate + "<br>" + "Shipping Cost: $" + shippingCost + "<br>" +
+    "Subtotal: $" + subtotal + "<br>" + "Tax amount: $" + taxAmount + "<br>" + "Total Cost: $" + totalCost;
+
+document.getElementById("mathOutput").innerHTML = result;
+
 // ==========================
 // Part 4: Conditionals
 // ==========================
