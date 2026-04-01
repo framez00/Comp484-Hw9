@@ -86,7 +86,22 @@ var sentence2 = "Original value: '" + value2 + "' -> Converted: " + number2 + " 
 var sentence3 = "Original value: '" + value3 + "' -> Converted: " + number3 + " -> isNaN: " + check3NaN + " -> isInteger: " + check3Int;
 var sentence4 = "Original value: '" + value4 + "' -> Converted: " + number4 + " -> isNaN: " + check4NaN + " -> isInteger: " + check4Int;
 
-var output = sentence1 + "<br>" + sentence2 + "<br>" + sentence3 + "<br>" + sentence4;
+//Part 4, adding conditionals
+var messageNaN;
+if(check3NaN == true){
+    messageNaN = "This value is not a valid number.";
+}else{
+    messageNan = "This value is a valid number.";
+}
+
+var messageInt;
+if(check4Int == true){
+    messageInt = "This value is an integer.";
+}else{
+    messageInt = "This value is not an integer."
+}
+
+var output = sentence1 + "<br>" + sentence2 + "<br>" + sentence3 + ". " + messageNaN + "<br>" + sentence4 + ". " + messageInt;
 
 document.getElementById("numberConversionOutput").innerHTML = output;
 
@@ -120,11 +135,12 @@ var taxAmount = subtotal * taxRate; //multiplication
 var totalCost = subtotal + taxAmount; //addition
 
 var totalFixed = totalCost.toFixed(2); //toFixed(2)
+var taxAmountFixed = taxAmount.toFixed(2);
 
 //build string that shows results
 var result;
 result = "Price: $" + itemPrice + "<br>" + "Taxrate: " + taxRate + "<br>" + "Shipping Cost: $" + shippingCost + "<br>" +
-    "Subtotal: $" + subtotal + "<br>" + "Tax amount: $" + taxAmount + "<br>" + "Total Cost: $" + totalCost;
+    "Subtotal: $" + subtotal + "<br>" + "Tax amount: $" + taxAmountFixed + "<br>" + "Total Cost: $" + totalFixed;
 
 document.getElementById("mathOutput").innerHTML = result;
 
