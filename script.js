@@ -139,13 +139,18 @@ var subtotal = itemPrice + shippingCost; //addition
 var taxAmount = subtotal * taxRate; //multiplication
 var totalCost = subtotal + taxAmount; //addition
 
-var totalFixed = totalCost.toFixed(2); //toFixed(2)
+//toFixed(2)
+var itemPriceFixed = itemPrice.toFixed(2);
+var shippingCostFixed = shippingCost.toFixed(2);
+
+var subtotalFixed = subtotal.toFixed(2);
+var totalFixed = totalCost.toFixed(2);
 var taxAmountFixed = taxAmount.toFixed(2);
 
 //build string that shows results
 var result;
-result = "Price: $" + itemPrice + "<br>" + "Taxrate: " + taxRate + "<br>" + "Shipping Cost: $" + shippingCost + "<br>" +
-    "Subtotal: $" + subtotal + "<br>" + "Tax amount: $" + taxAmountFixed + "<br>" + "Total Cost: $" + totalFixed;
+result = "Price: $" + itemPriceFixed + "<br>" + "Taxrate: " + taxRate + "<br>" + "Shipping Cost: $" + shippingCostFixed + "<br>" +
+    "Subtotal: $" + subtotalFixed + "<br>" + "Tax amount: $" + taxAmountFixed + "<br>" + "Total Cost: $" + totalFixed;
 
 document.getElementById("mathOutput").innerHTML = result;
 
